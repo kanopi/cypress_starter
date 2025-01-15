@@ -334,7 +334,7 @@ cy.visit('/');
 cy.location('pathname').should('eq', '/');
 ```
 
-### Tests based on Lighthouse mobile and dekstop viewport sizes
+### Tests based on Lighthouse mobile and desktop viewport sizes
 
 ```markdown
 describe('Test based on Lighthouse viewport width.', () => {
@@ -350,7 +350,7 @@ describe('Test based on Lighthouse viewport width.', () => {
     it('Mobile Test item', () => {
       // Vist the home slug and set to Lighthouse mobile viewport size.
       cy.visit('/')
-      cy.viewport(940, 1350)
+      cy.viewport(360, 640)
       // Do things.
     })
   })
